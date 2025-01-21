@@ -55,12 +55,12 @@ while True:
     except:
         continue
 
-# Filtra os jogadores que receberam votos
+# Filtra os jogadores que rsultado daeceberam votos
 votos_totais = sum(jogadores)
 if votos_totais == 0:
     print("Nenhum voto computado.")
 else:
-    print("\nResultado da votação:\n")
+    print("\nRe votação:\n")
     print(f"Foram computados {votos_totais} votos.\n")
     print("Jogador\tVotos\t\t%")
     
@@ -74,10 +74,3 @@ else:
     melhorJogador = max(porcentagemJogadores, key=lambda x: x[1])
     print(f"\nO melhor jogador foi o número {melhorJogador[0]}, com {melhorJogador[1]} votos, correspondendo a {melhorJogador[2]:.1f}% do total de votos.")
 
-# Exibe os resultados diretamente no console
-print("Resultado da votação:\n")
-print(f"Foram computados {votos_totais} votos.\n")
-print("Jogador\tVotos\t\t%")
-for jogador, votos, percentual in porcentagemJogadores:
-    print(f"{jogador}\t\t{votos}\t\t{percentual:.1f}%")
-print(f"\nO melhor jogador foi o número {melhorJogador[0]}, com {melhorJogador[1]} votos, correspondendo a {melhorJogador[2]:.1f}% do total de votos.")
