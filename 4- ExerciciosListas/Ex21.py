@@ -28,3 +28,8 @@ Relatório Final
  5 - peugeout        -   14.5 -   69.0 litros - R$ 155.17
 O menor consumo é do peugeout
 """
+
+
+L=[6,5,4,3,2,1]
+for k in range(-3,3):
+ print (L[k])
