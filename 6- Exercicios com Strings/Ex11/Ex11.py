@@ -19,9 +19,9 @@ from random import randint
 def EscolhePalavra():
     with open("6- Exercicios com Strings\Ex11\\dicionario.txt", "r+") as dicionario:
         palavras = dicionario.readlines()
-        palavra_aleatoria = palavras[randint(0, len(palavras) - 1)].strip()
+        palavra_aleatoria = palavras[randint(0, len(palavras) - 1)].strip().lower()
         dicionario.close()
-    return palavra_aleatoria.lower()
+    return palavra_aleatoria
 
 def ConstroiPalavra(letras, palavra):
     palavraContruida = ""
@@ -51,7 +51,7 @@ def main():
             print("\nParabéns, você ganhou!")
             break
 
-        letra = input("Digite uma letra: ")
+        letra = input("Digite uma letra: ").lower()
         
         if letra.isnumeric() or letra == "":
             print("\nDigite uma letra!!!!")
@@ -64,7 +64,7 @@ def main():
             tentativas += 1
             print(f"Você errou pela {tentativas}ª vez. Tente de novo!")
 
-        letras.add(letra.lower())
+        letras.add(letra)
 
     
     if tentativas == 6:
