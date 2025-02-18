@@ -29,4 +29,48 @@ Relatório Final
 O menor consumo é do peugeout
 """
 
+def main():
 
+    carros = []
+    consumo = []
+    contador = 0
+
+    print("Comparativo de Consumo de Combustível")
+    while contador <5:
+        try:
+            print(f"\nVeículo {contador+1}")
+            veiculo = input("Nome: ")
+            kmLitro = float(input("Km por litro: "))
+
+            carros.append(veiculo)
+            consumo.append(kmLitro)
+
+            contador+=1
+        except:
+            print("\nValores inválidos!\n")
+            continue
+    
+    print("Consumo em uma distância de 1000km com gasolina a R$2.25 o litro")
+    print("\nRelatório final")
+
+    menorConsumo = float("inf")
+    indexMenorConsumo = 0
+    for i in range(len(carros)):
+        litrosConsumidos = 1000/consumo[i]
+        gastoFinalDoCarro = litrosConsumidos*2.25
+
+        if litrosConsumidos < menorConsumo:
+            indexMenorConsumo = i
+            menorConsumo = litrosConsumidos
+        
+        print(f"{i+1} - {carros[i]:<20} - {consumo[i]} - {round(litrosConsumidos, 1)} litros - R$ {round(gastoFinalDoCarro, 2)}")
+
+    print(f"O menor consumo é do {carros[indexMenorConsumo]}")
+
+
+
+    return
+
+
+if __name__ == "__main__":
+    main()
