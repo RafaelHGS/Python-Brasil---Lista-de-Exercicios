@@ -27,10 +27,15 @@ Challenges involving lists, including searching, sorting, and manipulating data 
 ### 5. [Exercícios com Funções](https://wiki.python.org.br/ExerciciosFuncoes)
 Current focus: Writing reusable, modular functions to solve problems and improve code organization.
 
+### 6. [Exercícios com Strings](https://wiki.python.org.br/ExerciciosComStrings)
+Practice working with text manipulation, string formatting, and common string operations.
+
+### 7. [Exercícios com Arquivos](https://wiki.python.org.br/ExerciciosArquivos)
+Exercises covering reading, writing, and manipulating files in Python, including handling text files.
+
+
 ### Upcoming Topics
 
-- [Exercícios com Strings](https://wiki.python.org.br/ExerciciosComStrings)
-- [Exercícios com Arquivos](https://wiki.python.org.br/ExerciciosArquivos)
 - [Exercícios com Classes](https://wiki.python.org.br/ExerciciosClasses)
 - [Projetos](https://wiki.python.org.br/ListaDeExerciciosProjetos)
 
