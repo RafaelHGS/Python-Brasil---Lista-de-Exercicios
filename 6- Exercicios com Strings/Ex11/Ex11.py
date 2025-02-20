@@ -17,7 +17,7 @@ from random import randint
 
 
 def EscolhePalavra():
-    with open("6- Exercicios com Strings\Ex11\\dicionario.txt", "r+") as dicionario:
+    with open("6- Exercicios com Strings\Ex11\dicionario.txt", "r+") as dicionario:
         palavras = dicionario.readlines()
         palavra_aleatoria = palavras[randint(0, len(palavras) - 1)].strip().lower()
         dicionario.close()
@@ -53,7 +53,7 @@ def main():
 
         letra = input("Digite uma letra: ").lower()
         
-        if letra.isnumeric() or letra == "":
+        if letra.isnumeric() or letra == "" or len(letra) != 1:
             print("\nDigite uma letra!!!!")
             continue
         elif letra in letras:
